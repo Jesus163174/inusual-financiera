@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','rol'
     ];
 
     /**
@@ -28,12 +28,30 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+    public function validate($request){
+        return $request->validate([
+            'name'=>'required',
+            'rol'=>'required',
+            'password'=>'required',
+            'email'=>'required'
+        ]);
+    }
+    public function store($validated){
+        return User::create($validate);
+    }
+    public function edit($user,$request){
+        return $user->fill($request)->save();
+    }
+
+    public function scopeEmployees($query,$status,$rol){
+        return $query->byStatus($status)->byRol()->orderBy('id','desc');
+    }
+    public function scopebyStatus($query,$status){
+        return $query->where('status',$status);
+    }
+    public function scopeByRol($query,$rol){
+        return $query->where('rol',$rol);
+    }
+
+
 }
