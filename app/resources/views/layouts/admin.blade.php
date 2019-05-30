@@ -14,6 +14,7 @@
         <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="{{asset('styles/shards-dashboards.1.1.0.min.css')}}">
         <link rel="stylesheet" href="{{asset('styles/extras.1.1.0.min.css')}}">
         <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <link rel="stylesheet" href="{{asset('styles/me.css')}}">
     </head>
     <body class="h-100">
         <div class="container-fluid">
@@ -165,25 +166,9 @@
                         @yield('content')
                     </div>
                     <footer class="main-footer d-flex p-2 px-3 bg-white border-top">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Products</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-                        </ul>
-                        <span class="copyright ml-auto my-auto mr-2">Copyright © 2018
-                        <a href="https://designrevision.com" rel="nofollow">DesignRevision</a>
+                        
+                        <span class="copyright ml-auto my-auto mr-2">Inusual Software Industries 2019
+                        <a href="" rel="nofollow">Fbook</a>
                         </span>
                     </footer>
                 </main>
