@@ -4,7 +4,6 @@
             <th class="text-center">Nombre</th>
             <th class="text-center">Email</th>
             <th class="text-center">Estatus</th>
-            <th class="text-center">Acciones</th>
         </tr>
     </thead>
     <tbody>
@@ -15,9 +14,6 @@
                 </td>
                 <td class="text-center">{{$employe->email}}</td>
                 <td class="text-center">{{$employe->status}}</td>
-                <td class="text-center">
-
-                </td>
             </tr>
         @endforeach
     </tbody>

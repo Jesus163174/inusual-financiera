@@ -44,7 +44,7 @@ class User extends Authenticatable
     }
 
     public function scopeEmployees($query,$status,$rol){
-        return $query->byStatus($status)->byRol($rol)->orderBy('id','desc');
+        return $query->byRol($rol)->orderBy('id','desc');
     }
     public function scopebyStatus($query,$status){
         return $query->where('status',$status);
