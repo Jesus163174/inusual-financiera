@@ -20,6 +20,7 @@ class UserController extends Controller
         try{
             $user = new User();
             $validate = $user->validate($request);
+            $validate['password'] = bcrypt($validate['password']);
             $user->store($validate);
             $msj = "Usuario registrado correctamente";
             return redirect('/admin/usuarios')->with('status_succes',$msj);
