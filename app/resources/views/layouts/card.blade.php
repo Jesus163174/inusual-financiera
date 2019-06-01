@@ -1,8 +1,8 @@
-<div class="card bm-md enable">
-    <div class="card-header">
-        <h3 class="card-title">
+<div class="card card card-small mb-4 bm-md enable">
+    <div class="card-header border-bottom">
+        <h6 class="m-0">
             {{$title}}({{$count}})
-        </h3>
+        </h6>
     </div>
     <div class="card-body">
         @include($data)

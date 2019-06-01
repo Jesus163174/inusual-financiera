@@ -66,7 +66,12 @@
                                 <span>Creditos</span>
                                 </a>
                             </li>
-                            
+                            <li class="nav-item">
+                                <a class="nav-link " href="/admin/clientes">
+                                <i class="material-icons">person</i>
+                                <span>Clientes</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </aside>

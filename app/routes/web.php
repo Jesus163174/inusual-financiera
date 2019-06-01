@@ -17,6 +17,7 @@ Route::get('/','AdminController@index')->middleware('auth');
 Route::group(['prefix'=>'/admin','middleware'=>'auth'],function(){
     Route::get('/','AdminController@index');
     Route::resource('usuarios','UserController');
+    Route::resource('clientes','CustomerController');
 });
 Route::get('perfil','UserController@perfil')->middleware('auth');
 
