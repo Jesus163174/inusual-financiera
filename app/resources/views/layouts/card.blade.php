@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card bm-md enable">
     <div class="card-header">
         <h3 class="card-title">
             {{$title}}({{$count}})
@@ -8,3 +8,4 @@
         @include($data)
     </div>
 </div>
+@include($mobile)

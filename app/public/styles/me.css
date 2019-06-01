@@ -4,3 +4,11 @@
 .bm-md{
     margin-bottom: 20px;
 }
+.responsive{
+    display: none;
+}
+@media (max-width:767px){
+    .enable{
+        display: none;
+    }
+}
