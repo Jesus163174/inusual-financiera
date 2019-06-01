@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="UTF-8">
+<head><meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+    
     <title>Inusual Software -  Acceso</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
@@ -32,7 +32,7 @@
                     </div>
                     <div class="logmod__tab lgm-2">
                         <div class="logmod__heading">
-                            <span class="logmod__heading-subtitle">Ingresa tu Correo y contraseña <strong>Para accesar</strong></span>
+                            <span class="logmod__heading-subtitle">Ingresa tu Correo y contraseña<strong> Para accesar</strong></span>
                             @error('email')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -57,7 +57,7 @@
                                 </div>
                                 <div class="sminputs">
                                     <div class="input full">
-                                        <label class="string optional" for="user-pw">Contraseña *</label>
+                                        <label class="string optional" for="user-pw">Contraseña*</label>
                                         <input class="string optional" maxlength="255" id="user-pw"
                                             placeholder="Password" name="password" type="password" size="50" />
                                         <span class="hide-password">Mostrar</span>
