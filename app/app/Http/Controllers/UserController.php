@@ -38,7 +38,7 @@ class UserController extends Controller
     public function update(Request $request, $id){
         try{
             $user = User::find($id);
-            $user->edit($request);
+            $user->edit($user,$request->all());
             $msj = "Usuario actualizado correctamente";
             return redirect('/admin/usuarios')->with('status_succes',$msj);
         }catch(Exception $e){
@@ -51,7 +51,8 @@ class UserController extends Controller
             $user->status = 'activo';
         else
             $user->status = 'eliminado';
+        
         $user->save();
-        return redirect('/admin/usuarios');
+        return back();
     }
 }

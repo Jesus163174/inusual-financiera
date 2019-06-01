@@ -37,7 +37,7 @@ class User extends Authenticatable
         ]);
     }
     public function store($validated){
-        return User::create($validate);
+        return User::create($validated);
     }
     public function edit($user,$request){
         return $user->fill($request)->save();
