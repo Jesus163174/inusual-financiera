@@ -14,10 +14,12 @@
 Route::get('/','AdminController@index')->middleware('auth');
 
 
-Route::group(['prefix'=>'/admin'],function(){
+Route::group(['prefix'=>'/admin','middleware'=>'auth'],function(){
     Route::get('/','AdminController@index');
     Route::resource('usuarios','UserController');
 });
+Route::get('perfil','UserController@perfil')->middleware('auth');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -1,5 +1,5 @@
 @foreach($users as $employe)
-<div class="col-lg-3 col-md-6 col-xs-12 col-sm-12 mb-4">
+<div class="col-lg-3 col-md-6 col-xs-12 col-sm-12 mb-4 responsive">
     <div class="card card-small card-post card-post--1">
         <div class="card-post__image" style="background-image: url('{{asset('images/content-management/2.jpeg')}}');">
             <a href="#" class="card-post__category badge badge-pill badge-success">{{$employe->status}}</a>

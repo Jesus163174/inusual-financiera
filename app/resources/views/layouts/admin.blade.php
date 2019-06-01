@@ -137,7 +137,7 @@
                                     <span class="d-none d-md-inline-block">{{Auth::user()->name}}</span>
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-small">
-                                        <a class="dropdown-item" href="user-profile-lite.html">
+                                        <a class="dropdown-item" href="/perfil">
                                         <i class="material-icons">&#xE7FD;</i> Perfil</a>
                                         
                                         <div class="dropdown-divider"></div>
